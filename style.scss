@@ -1,6 +1,8 @@
 :root {
-    --padding: 20px;
-    --testColor: rgba(100,100,100,0.2);
+    --paddingL: 20px;
+    --paddingM: 15px;
+    --paddingS: 10px;
+    --testColor: rgba(100,100,100,0.4);
 }
 * {
     margin: 0px;
@@ -16,12 +18,12 @@
         justify-content: center;
     }
     #site {
-        padding: var(--padding);
+        padding: var(--paddingL);
         width: 75%;
         background-color: var(--testColor);
     }
     header {
-        padding: var(--padding);
+        padding: var(--paddingL);
         display: flex;
         flex-flow: row nowrap;
         justify-content: space-between;
@@ -32,11 +34,11 @@
         }
     }
     #content {
-        padding: var(--padding);
+        padding: var(--paddingL);
         background-color: var(--testColor);
     }
     footer {
-        padding: var(--padding);
+        padding: var(--paddingL);
         background-color: var(--testColor);
     }
 
@@ -52,23 +54,154 @@
         justify-content: space-evenly;
     }
     .img {
-        padding: var(--padding);
+        padding: var(--paddingL);
         width: 200px;
         border-radius: 10%;
+        background-color: var(--testColor);
         img {
             width: 100%;
+        }
+        ul{
+            .title{
+                font-weight: bolder;
+            }
+            li{
+                text-align: center;
+            }
+        }
+    }
+}
+/*phone*/
+@media only screen  and (max-width: 599px)  {
+    body {
+        min-height: 100vh;
+        background-color: var(--testColor);
+        display: flex;
+        justify-content: center;
+    }
+    #site {
+        padding: var(--paddingS);
+        width: 90%;
+        background-color: var(--testColor);
+    }
+    header {
+        padding: var(--paddingS);
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-between;
+        align-items: center;
+        background-color: var(--testColor);
+        #menu {
+            text-align: center;
+            padding: var(--paddingS);
+        }
+    }
+    #content {
+        padding: var(--paddingS);
+        background-color: var(--testColor);
+    }
+    footer {
+        padding: var(--paddingS);
+        background-color: var(--testColor);
+    }
+
+    .logo {
+        width: 100%;
+        aspect-ratio: 3/2;
+        object-fit: cover;
+        border-radius: 20px;
+    }
+    .galery {
+        display: flex;
+        flex-flow: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .img {
+        padding: var(--paddingS);
+        width: 80%;
+        border-radius: 10%;
+        background-color: var(--testColor);
+        display: flex;
+        img {
+            padding: var(--paddingS);
+            width: 50%;
+        }
+        ul{
+            padding: var(--paddingS);
+            .title{
+                font-weight: bolder;
+            }
+            li{
+                text-align: center;
+            }
         }
     }
 }
 /*tablet*/
-@media only screen and (min-width: 600px) and ( max-width: 1299px) {
+@media only screen and (min-width: 600px) and ( max-width: 1299px){
     body {
-        background-color: palevioletred;
+        min-height: 100vh;
+        background-color: var(--testColor);
+        display: flex;
+        justify-content: center;
     }
-}
-/*phone*/
-@media only screen and (max-width: 599px) {
-    body {
-        background-color: aqua;
+    #site {
+        padding: var(--paddingM);
+        width: 90%;
+        background-color: var(--testColor);
+    }
+    header {
+        padding: var(--paddingM);
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-between;
+        align-items: center;
+        background-color: var(--testColor);
+        #menu {
+            text-align: center;
+            padding: var(--paddingM);
+        }
+    }
+    #content {
+        padding: var(--paddingM);
+        background-color: var(--testColor);
+    }
+    footer {
+        padding: var(--paddingM);
+        background-color: var(--testColor);
+    }
+
+    .logo {
+        width: 100%;
+        aspect-ratio: 3/2;
+        object-fit: cover;
+        border-radius: 20px;
+    }
+    .galery {
+        display: flex;
+        flex-flow: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .img {
+        padding: var(--paddingM);
+        width: 80%;
+        border-radius: 10%;
+        background-color: var(--testColor);
+        display: flex;
+        img {
+            padding: var(--paddingM);
+            width: 50%;
+        }
+        ul{
+            padding: var(--paddingM);
+            .title{
+                font-weight: bolder;
+            }
+            li{
+                text-align: center;
+            }
+        }
     }
 }
