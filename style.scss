@@ -9,6 +9,7 @@
     padding: 0px;
     list-style: none;
 }
+
 /*desktop*/
 @media only screen and (min-width: 1300px) {
     body {
@@ -40,6 +41,9 @@
     footer {
         padding: var(--paddingL);
         background-color: var(--testColor);
+        display: flex;
+        justify-content: space-around;
+
     }
 
     .logo {

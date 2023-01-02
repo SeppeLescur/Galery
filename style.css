@@ -42,6 +42,8 @@
   footer {
     padding: var(--paddingL);
     background-color: var(--testColor);
+    display: flex;
+    justify-content: space-around;
   }
   .logo {
     width: 200px;
